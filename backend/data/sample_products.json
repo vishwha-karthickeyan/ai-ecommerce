@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 14",
+    "price": 60000,
+    "category": "mobile"
+  },
+  {
+    "id": 2,
+    "name": "Gaming Laptop",
+    "price": 75000,
+    "category": "laptop"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Mouse",
+    "price": 1500,
+    "category": "accessories"
+  }
+]

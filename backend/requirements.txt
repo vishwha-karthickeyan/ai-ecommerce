@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymongo
+python-dotenv
+google-generativeai
+scikit-learn
+sentence-transformers
+python-jose
+passlib
+bcrypt
+chromadb
