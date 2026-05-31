@@ -2,7 +2,7 @@ fastapi
 uvicorn
 pymongo
 python-dotenv
-google-generativeai
+google-genai
 scikit-learn
 sentence-transformers
 python-jose

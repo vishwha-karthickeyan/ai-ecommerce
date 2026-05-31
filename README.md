@@ -67,9 +67,9 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ### 4. Load sample products
 
-Import `backend/data/sample_products.json` into MongoDB collection `ai_commerce.products`.
+The backend will automatically load `backend/data/sample_products.json` into MongoDB on startup when the products collection is empty.
 
-Example using `mongosh`:
+If you prefer to seed manually, you can also import the file into `ai_commerce.products`:
 
 ```js
 use ai_commerce
@@ -117,8 +117,9 @@ The frontend should be available at `http://localhost:3000`.
 ## Notes
 
 - The backend uses a static `SECRET_KEY` in `backend/main.py`; update it for production.
+- The backend defaults `MONGO_URI` to `mongodb://localhost:27017` when no env value is provided.
 - The sample AI modules use simple embeddings and text matching for demo purposes.
-- Gemini API calls require a valid `GEMINI_API_KEY`.
+- Gemini API calls require a valid `GEMINI_API_KEY`; if none is provided, the backend still runs in demo mode.
 
 ## Future Improvements
 
